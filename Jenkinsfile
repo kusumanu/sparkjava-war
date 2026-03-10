@@ -7,10 +7,6 @@ pipeline {                           // 1  Defines the start of the Jenkins pipe
 
     stages {                          // 6 Defines the stages block where multiple stages are declared
 
-        stage('git clone') {          // 7 Creates a stage named 'git clone'
-            steps {                   // 8 Defines the steps that will be executed in this stage
-                git url: 'https://github.com/kusumanu/sparkjava-war.git', branch: 'main'
-                // 9 Clones the specified GitHub repository from the master branch
             }                         // 10 Ends the steps block for 'git clone' stage
         }                             // 11 Ends the 'git clone' stage
 
