@@ -5,11 +5,7 @@ pipeline {                           // 1  Defines the start of the Jenkins pipe
         PATH = "/opt/maven/bin:$PATH" // 4 Adds Maven's path to the system's PATH variable
     }                                 // 5 Ends the environment block
 
-    stages {                          // 6 Defines the stages block where multiple stages are declared
-
-            }                         // 10 Ends the steps block for 'git clone' stage
-        }                             // 11 Ends the 'git clone' stage
-
+    stages {                          // 6 Defines the stages block where multiple stages are declare
         stage('build') {              // 12 Creates a stage named 'build'
             steps {                   // 13 Defines the steps that will be executed in this stage
                 sh 'mvn clean install' // 14 Runs the Maven clean install command to build the project
